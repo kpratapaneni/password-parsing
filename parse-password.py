@@ -36,7 +36,7 @@ def parse_to_json(passwd_list, groups_list):
 def main():
 	parser = argparse.ArgumentParser()
 	parser.add_argument("--passwd_file", default="/etc/passwd")
-	parser.add_argument("--groups_file", default="/etc/group")
+	parser.add_argument("--groups_file", default="/etc/groups")
 
 	args = parser.parse_args()
 	logging.basicConfig(filename=LOG_FILE, level=logging.INFO)
